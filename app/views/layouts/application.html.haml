@@ -1,0 +1,36 @@
+!!! 5
+%html
+%head
+  %title
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  =javascript_include_tag 'application', 'data-turbolinks-track' => true
+  =csrf_meta_tags
+  %style
+    @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+
+%body
+  %nav.nav-bar.navbar-default
+    .container
+      .navbar-brand=link_to "Recipe Book", root_path
+      %ul.nav.navbar-nav.navbar-right
+        %li=link_to "Recipe", new_recipe_path
+        %li=link_to "Sign Out", root_path
+  .container
+    %p.notice=notice
+      
+    =yield
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

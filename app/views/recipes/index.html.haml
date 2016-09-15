@@ -15,7 +15,6 @@
       %tr
         %td= recipe.title
         %td= recipe.description
-        %td= recipe.user_id
         %td= link_to 'Show', recipe
         %td= link_to 'Edit', edit_recipe_path(recipe)
         %td= link_to 'Destroy', recipe, :method => :delete, :data => { :confirm => 'Are you sure?' }
